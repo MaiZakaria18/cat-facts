@@ -1,0 +1,70 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+}
+
+/* Make main container fill screen */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;        /* Full height of screen */
+  width: 100vw;         /* Full width of screen */
+}
+
+/* Card styling */
+.fact-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  border-radius: 0;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Left: Cat Image */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right: Cat Fact */
+.text-container {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #555;
+}
